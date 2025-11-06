@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registrationHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:text="Registration"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/studentId"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registrationHeading"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter registration ID" />
+
+            <EditText
+                android:id="@+id/studentName"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Student full name" />
+
+            <EditText
+                android:id="@+id/studentAddress"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentName"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter permanent address" />
+
+            <EditText
+                android:id="@+id/studentContactNo"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Enter contact number" />
+
+            <EditText
+                android:id="@+id/studentEmail"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentContactNo"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter email id" />
+
+            <EditText
+                android:id="@+id/studentPass"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentEmail"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter Password"
+                app:passwordToggleEnabled="true"
+                />
+            <EditText
+                android:id="@+id/studentCollegeName"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentPass"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Enter college Name" />
+
+            <EditText
+                android:id="@+id/studentParentsContactInfo"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentCollegeName"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter parents contact number" />
+
+            <EditText
+                android:id="@+id/studentJoiningDate"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentParentsContactInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Joining Date(DD/MM/YYYY)"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/studentMessNumber"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentJoiningDate"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter student Mess number" />
+
+            <EditText
+                android:id="@+id/studentRoomNumber"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentMessNumber"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter student Room number" />
+
+            <Button
+                android:id="@+id/register_Student"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentRoomNumber"
+                android:layout_centerHorizontal="true"
+                android:text="UPDATE"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

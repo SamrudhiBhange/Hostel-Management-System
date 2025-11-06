@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AdminSignUp">
+
+    <TextView
+        android:id="@+id/signupHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/adminName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/adminAddress"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="FULL ADDRESS" />
+
+    <EditText
+        android:id="@+id/adminContact"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="CONTACT NUMBER"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/adminEmail"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="EMAIL" />
+
+    <EditText
+        android:id="@+id/adminId"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Admin ID"/>
+
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerSignUp"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="SIGN UP"
+        android:textStyle="bold" />
+
+</RelativeLayout>

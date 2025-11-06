@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MarkStaffAttendance">
+
+    <TextView
+        android:id="@+id/attendanceHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="ATTENDANCE"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/attendanceStaffId"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attendanceHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Enter ID" />
+
+    <EditText
+        android:id="@+id/attendanceDate"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendanceStaffId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="DATE"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/staffInTime"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendanceDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="IN TIME"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/staffOutTime"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staffInTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="OUT TIME (HH:MM:SS)"
+        android:inputType="time" />
+
+    <RadioGroup
+        android:id="@+id/staffAttendanceRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/staffOutTime">
+            <RadioButton
+                android:id="@+id/staffPresent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Present"/>
+
+            <RadioButton
+                android:id="@+id/staffAbsent"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:textSize="15dp" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/markStaffAttendance"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffAttendanceRadio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="MARK ATTENDANCE"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

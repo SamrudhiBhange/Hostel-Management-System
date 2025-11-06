@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterNewStaff">
+
+    <TextView
+        android:id="@+id/signupHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="REGISTER"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/staffName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/staffAddress"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="FULL ADDRESS" />
+
+    <EditText
+        android:id="@+id/hostelAllocation"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="HOSTEL NUMBER " />
+
+
+    <EditText
+        android:id="@+id/staffContact"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostelAllocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="CONTACT NUMBER"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/staffEmail"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="EMAIL" />
+
+    <EditText
+        android:id="@+id/staffId"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="STAFF ID" />
+
+    <EditText
+        android:id="@+id/staffPassword"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerstaff"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staffPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="REGISTER"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EnterStaffInfoForEdit">
+
+    <TextView
+        android:id="@+id/editHeading"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="UPDATE STAFF DETAILS"
+        android:gravity="center"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editStaffId"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="STAFF ID" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="NEXT"
+        android:textStyle="bold" />
+
+</RelativeLayout>

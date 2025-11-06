@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HostelMSA</string>
+    <string-array name="status">
+        <item>Absent</item>
+        <item>Present</item>
+    </string-array>
+</resources>

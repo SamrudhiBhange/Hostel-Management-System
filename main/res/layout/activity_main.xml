@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/welcomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:orientation="vertical">
+        <!--    Textview for welcome message-->
+
+        <TextView
+            android:id="@+id/welcomeMsg"
+            android:layout_width="287dp"
+            android:layout_height="172dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Welcome to Hostel Management system"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!--    Button for admin login-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/admin"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:text="Admin"
+        android:textStyle="bold" />
+
+
+    <!--    Button for staff login-->
+    <Button
+        android:id="@+id/staff"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:text="Staff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <!--    Button for student login-->
+    <Button
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staff"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:text="Student"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

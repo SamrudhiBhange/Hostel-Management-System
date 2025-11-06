@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hostelmsa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HostelMSA">
+        <activity
+            android:name=".StudentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".EditStudDetails"
+            android:exported="false" />
+        <activity
+            android:name=".StudAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".StaffStudEdit"
+            android:exported="false" />
+        <activity
+            android:name=".StaffStudView"
+            android:exported="false" />
+        <activity
+            android:name=".StaffPage2"
+            android:exported="false" />
+        <activity
+            android:name=".StaffLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminManageStaff"/>
+        <activity android:name=".EditStaffDetails"></activity>
+        <activity android:name=".EnterStaffInfoForEdit"></activity>
+        <activity android:name=".MarkStaffAttendance"></activity>
+        <activity android:name=".RegisterNewStaff"></activity>
+        <activity android:name=".StudentRegistration"></activity>
+        <activity android:name=".ViewStaffDetails"></activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EditStaffDetails">
+
+    <TextView
+        android:id="@+id/editStaffHeading"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="EDIT STAFF DETAILS"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editStaffName"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="NAME" />
+
+    <EditText
+        android:id="@+id/editStaffAddress"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="FULL ADDRESS" />
+
+    <EditText
+        android:id="@+id/editHostelAllocation"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="HOSTEL NUMBER " />
+
+
+    <EditText
+        android:id="@+id/editStaffContact"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editHostelAllocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="CONTACT NUMBER"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editStaffEmail"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="EMAIL" />
+
+    <EditText
+        android:id="@+id/editStaffId"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="STAFF ID" />
+
+    <EditText
+        android:id="@+id/editStaffPassword"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveStaff"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStaffPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Save"
+        android:textStyle="bold" />
+
+</RelativeLayout>
